@@ -1,0 +1,39 @@
+:root {
+  --bg1-color: #923b27;
+  --bg2-color: #2a354b;
+  --bg3-color: #7f6953;
+
+  --text1-color: #b9a784;
+  --text2-color: #97702e;
+  --text3-color: #2f3a3d;
+}
+/*CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: solid 1px red;*/
+}
+
+body {
+  font-family: 'Cambay', sans-serif;
+  /*overflow: hidden;*/
+  height: 100vh;
+  background-color: var(--bg2-color);
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 9em;
+  text-align: center;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameStory {
+  color: var(--text2-color);
+}

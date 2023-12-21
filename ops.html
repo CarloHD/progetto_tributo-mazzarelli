@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+
+    <base href="./" />
+    <title>Ops! Non siamo ancora pronti!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cambay&family=Dancing+Script:wght@700&family=Expletus+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        user-select: none;
+        box-sizing: border-box;
+        margin: 0%;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #9eb0c3;
+        color: #2f3a3d;
+        font-family: 'Cambay', sans-serif;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 20vh;
+
+        margin-top: 5vh;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+      }
+      h2 {
+        text-align: center;
+        font-size: 5vh;
+        padding: 0 2%;
+      }
+
+      #panda {
+        pointer-events: none;
+
+        height: 35vh;
+        position: fixed;
+        bottom: 0vh;
+        align-self: center;
+      }
+
+      @media (orientation: landscape) {
+        body {
+          justify-content: center;
+          align-items: flex-end;
+        }
+        h1 {
+          width: 60vw;
+        }
+
+        h2 {
+          width: 60vw;
+        }
+
+        #panda {
+          height: 50vh;
+          width: unset;
+          left: 10vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>OPS!</h1>
+    <h2>Presto ci sarà qualcosa, che al momento però non c'è...</h2>
+    <img id="panda" contextmenu="none" src="./image/Panda-ops.svg" />
+  </body>
+</html>
